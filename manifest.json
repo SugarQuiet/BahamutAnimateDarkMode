@@ -1,0 +1,22 @@
+{
+  "name": "巴哈姆特動畫瘋深色模式 Bahamut animate dark mode",
+  "version": "1.0",
+  "description": "Simple change bahamut animate website to dark mode",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "page_action": {
+    "default_icon": {
+      "16": "images/favicon.ico",
+      "24": "images/favicon.ico",
+      "32": "images/favicon.ico"
+    },
+    "default_title": "巴哈姆特動畫瘋深色模式"
+  },
+  "content_scripts": [{
+    "matches": ["https://ani.gamer.com.tw/*"],
+    "js": ["index.js"]
+  }],
+  "manifest_version": 2
+}
